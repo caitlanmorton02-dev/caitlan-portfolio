@@ -4,11 +4,14 @@ import { useState, useEffect } from "react"
 import { Case } from "@/content/cases"
 import { caseStore } from "@/lib/case-store"
 
+declare function trackEvent(name: string, props?: Record<string, any>): void
+
 function handleClose() {
   caseStore.close()
   const overlay = document.getElementById("cait-overlay")
   if (overlay) overlay.classList.remove("open")
   document.body.style.overflow = ""
+  trackEvent("modal_close")
 }
 
 export default function CaseStudyModal() {
