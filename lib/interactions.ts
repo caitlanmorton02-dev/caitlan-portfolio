@@ -1,5 +1,7 @@
 import { CASES } from "../content/cases"
-import { caseStore } from "./case-store"  // ← ADD THIS IMPORT
+import { caseStore } from "./case-store"
+
+declare function trackEvent(name: string, props?: Record<string, any>): void
 
 /**
  * Opens the case study overlay. Content is now rendered by CaseStudyModal
@@ -12,17 +14,21 @@ export function openCS(key: string, root: HTMLElement): void {
   const overlay = root.querySelector<HTMLElement>("#cait-overlay")
   if (!panel || !overlay) return
 
-  caseStore.open(cs)                      // ← replaces the entire panel.innerHTML block
+  caseStore.open(cs)
   overlay.classList.add("open")
   document.body.style.overflow = "hidden"
   panel.scrollTop = 0
+
+  trackEvent("modal_open", { case_id: key })
 }
 
 export function closeCS(root: HTMLElement): void {
   const overlay = root.querySelector<HTMLElement>("#cait-overlay")
   if (overlay) overlay.classList.remove("open")
   document.body.style.overflow = ""
-  caseStore.close()                       // ← ADD: clears React state
+  caseStore.close()
+
+  trackEvent("modal_close")
 }
 
 /**
@@ -85,8 +91,10 @@ export function initMobileNav(root: HTMLElement): () => void {
  */
 export function initModalHandlers(root: HTMLElement): () => void {
   function handleCardClick(e: Event) {
-    const el = (e.currentTarget as HTMLElement)
-    openCS(el.dataset.cs ?? "", root)
+    const el = e.currentTarget as HTMLElement
+    const key = el.dataset.cs ?? ""
+    trackEvent("card_click", { case_id: key })
+    openCS(key, root)
   }
   const cards = root.querySelectorAll<HTMLElement>("[data-cs]")
   cards.forEach((el) => el.addEventListener("click", handleCardClick))
