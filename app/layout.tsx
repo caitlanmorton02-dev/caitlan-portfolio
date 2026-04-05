@@ -22,19 +22,20 @@ export const metadata: Metadata = {
   },
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html
+   <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <head>
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id='G-LN0JFSM94'}`}
+          src="https://www.googletagmanager.com/gtag/js?id=G-LN0JFSM94B"
           strategy="afterInteractive"
         />
 
@@ -44,10 +45,14 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             window.gtag = gtag;
             gtag('js', new Date());
-            gtag('config', 'G-LN0JFSM94');
+            gtag('config', 'G-LN0JFSM94B');
           `}
         </Script>
-        {children}</body>
+      </head>
+
+      <body className="min-h-full flex flex-col">
+        {children}
+      </body>
     </html>
   );
 }

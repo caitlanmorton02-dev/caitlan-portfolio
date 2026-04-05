@@ -1,8 +1,6 @@
 import { CASES } from "../content/cases"
 import { caseStore } from "./case-store"
-
-declare function trackEvent(name: string, props?: Record<string, any>): void
-
+import { trackEvent } from "./analytics"; 
 /**
  * Opens the case study overlay. Content is now rendered by CaseStudyModal
  * via React state — no more innerHTML.
