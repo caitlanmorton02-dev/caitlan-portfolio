@@ -15,10 +15,35 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Caitlan Morton Portfolio",
-  description: "Senior Product Designer specialising in end-to-end, evidence-led product design. Focused on experimentation, systems, and measurable outcomes across web and mobile.",
+  title: "Caitlan Morton — Product Designer",
+  description:
+    "Senior Product Designer specialising in end-to-end, evidence-led product design. Focused on experimentation, systems, and measurable outcomes across web and mobile.",
+
   icons: {
     icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
+
+  openGraph: {
+    title: "Caitlan Morton — Product Designer",
+    description: "End-to-end, evidence-led product design.",
+    url: "https://www.caitlanmorton.com",
+    siteName: "Caitlan Morton",
+    images: [
+      {
+        url: "https://www.caitlanmorton.com/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Caitlan Morton — Product Designer",
+    description: "End-to-end, evidence-led product design.",
+    images: ["https://www.caitlanmorton.com/og-image.png"],
   },
 };
 
