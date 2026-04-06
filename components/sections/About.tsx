@@ -79,9 +79,12 @@ export default function About() {
           <div className="r">
             <div className="about-label">About</div>
             <h2 className="about-h2">
-              I design systems,
+               I focus on how things
               <br />
-              <em>not just screens</em>
+              <em>connect, scale,</em>
+              <br />
+              and actually <em>work</em>
+            
             </h2>
             <div className="about-body">
               <p>
