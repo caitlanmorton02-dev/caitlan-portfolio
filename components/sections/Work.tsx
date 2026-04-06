@@ -197,7 +197,7 @@ return ( <section id="cait-work"> <div className="wrap"> <div className="sec-lab
               Lead Designer · Tester
             </span>
             <span className="sm-result">
-              +1.75% conversion uplift · 99.99% confidence
+              +1.75% conversion uplift · +12% wishlist adds
             </span>
           </div>
 

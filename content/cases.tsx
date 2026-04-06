@@ -200,7 +200,7 @@ export const CASES: Record<string, Case> = {
       { k: "Role",             v: "Lead Designer · Tester", big: false },
       { k: "Method",           v: "Hypothesis-led A/B",     big: false },
       { k: "Cart test result", v: "+1.75%",                 big: true  },
-      { k: "Confidence",       v: "99.99%",                 big: true  },
+      { k: "Wishlist Adds",       v: "+12%",                 big: true  },
     ],
     body: () => (
       <>
