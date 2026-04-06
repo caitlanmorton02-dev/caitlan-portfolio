@@ -23,7 +23,7 @@ const STATS = [
     body: "Real user validation, built in from the start.",
   },
   {
-    num: "3",
+    num: "4",
     sup: "+",
     title: "Design systems architected",
     body: "Scalable across web and app, multi-market and multi-region.",
