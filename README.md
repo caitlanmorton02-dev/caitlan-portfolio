@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Caitlan Morton — Portfolio
 
-## Getting Started
+This is my personal portfolio, designed and built as an end-to-end product rather than a static site.
 
-First, run the development server:
+## Approach
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Instead of designing individual pages, I focused on building a small, scalable system:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Reusable components designed in Figma
+- Built as reusable components in Next.js
+- Consistent structure across design and code
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The goal was to move away from “screens” and towards something that could scale and evolve.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build
 
-## Learn More
+- Next.js (App Router)
+- Tailwind CSS
+- Component-driven structure
+- Deployed via Vercel
 
-To learn more about Next.js, take a look at the following resources:
+## Workflow
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Treated like a real product:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Feature branches
+- Pull requests
+- Iterative updates
+- Continuous deployment
 
-## Deploy on Vercel
+## Tracking & Learning
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Basic analytics added to understand real behaviour:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Click tracking
+- Modal interactions
+- Page engagement
+
+This isn’t just about how it looks — it’s about how it performs and evolves.
+
+## Live
+
+https://www.caitlanmorton.com/
+
+---
+
+Still learning, but this project reflects how I’m thinking about design more intentionally — focusing on systems, behaviour, and real usage.
