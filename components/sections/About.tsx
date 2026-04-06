@@ -34,7 +34,7 @@ const CAREER = [
   {
     co: "PrettyLittleThing",
     role: "Design and Experimentation Manager",
-    yr: "2024 to 2025",
+    yr: "2024 to 2026",
     bullets: [
       "Led experimentation design across core journeys, partnering with product, engineering, and analytics.",
       "Defined hypotheses, success metrics, and test strategy aligned to business goals.",
