@@ -85,7 +85,7 @@ export default function About() {
             </h2>
             <div className="about-body">
               <p>
-                I am a senior product designer with 8 years shipping across{" "}
+                I am a senior product designer with 7 years shipping across{" "}
                 <strong>e-commerce, mobile, and internal tools</strong>. My focus is on reducing
                 friction, preserving context, and turning small interaction changes into meaningful
                 product impact.
@@ -94,11 +94,6 @@ export default function About() {
                 At PrettyLittleThing I owned design independently across core journeys, built and
                 evolved the design system, and progressed from{" "}
                 <strong>UX Designer to Design and Experimentation Manager</strong>.
-              </p>
-              <p>
-                In 2026 I am looking for a role where{" "}
-                <strong>design has a genuine seat at the table</strong> and the standard for
-                quality is high.
               </p>
             </div>
             <div className="skill-list">
