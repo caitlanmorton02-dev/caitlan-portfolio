@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import { GA_ID } from "@/lib/analytics";
+import { generateSEO } from "@/lib/seo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,36 +16,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Caitlan Morton — Product Designer",
-  description:
-    "Senior Product Designer specialising in end-to-end, evidence-led product design. Focused on experimentation, systems, and measurable outcomes across web and mobile.",
-
+  ...generateSEO(),
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
+};
 
-  openGraph: {
-    title: "Caitlan Morton — Product Designer",
-    description: "End-to-end, evidence-led product design.",
-    url: "https://www.caitlanmorton.com",
-    siteName: "Caitlan Morton",
-    images: [
-      {
-        url: "https://www.caitlanmorton.com/og-image.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "Caitlan Morton — Product Designer",
-    description: "End-to-end, evidence-led product design.",
-    images: ["https://www.caitlanmorton.com/og-image.png"],
-  },
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Caitlan Morton",
+  jobTitle: "Senior Product Designer",
+  url: "https://www.caitlanmorton.com",
+  sameAs: ["https://www.linkedin.com/in/caitlan-morton-242597176"],
 };
 
 
@@ -59,6 +45,10 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-LN0JFSM94B"
           strategy="afterInteractive"
