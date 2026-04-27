@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 const BASE_URL = "https://www.caitlanmorton.com";
 const DEFAULT_IMAGE = `${BASE_URL}/og-image.png`;
-const DEFAULT_TITLE = "Caitlan Morton - Senior Product Designer";
+const DEFAULT_TITLE = "Caitlan Morton: Senior Product Designer";
 const DEFAULT_DESCRIPTION =
   "Senior Product Designer specialising in systems, experimentation, and end-to-end product design.";
 
