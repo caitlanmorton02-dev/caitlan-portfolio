@@ -1,5 +1,5 @@
 /**
- * cases.tsx  (renamed from cases.ts — JSX required for ReactNode bodies)
+ * cases.tsx  (renamed from cases.ts, JSX required for ReactNode bodies)
  *
  * Migration status:
  *   marketplace  ✅ migrated
@@ -61,7 +61,7 @@ export const CASES: Record<string, Case> = {
         <CsSection>
           <h4>End-to-End Experience</h4>
           <p>
-            I designed the Marketplace experience end-to-end — from discovery through to listing and seller interaction.
+            I designed the Marketplace experience end-to-end, from discovery through to listing and seller interaction.
             The goal was to create a seamless loop between buying and selling within the same ecosystem.
           </p>
           <CsFlow items={[
@@ -83,10 +83,10 @@ export const CASES: Record<string, Case> = {
                   and price items from scratch.
                 </p>
                 <p>
-                  It was the biggest drop-off point in the journey — not because users didn&apos;t want to sell,
+                  It was the biggest drop-off point in the journey, not because users didn&apos;t want to sell,
                   but because getting started felt like too much effort.
                 </p>
-                <CsQuote>Users weren&apos;t the problem — starting from scratch was.</CsQuote>
+                <CsQuote>Users weren&apos;t the problem, starting from scratch was.</CsQuote>
               </>
             }
             visual={
@@ -105,13 +105,13 @@ export const CASES: Record<string, Case> = {
               <>
                 <p>
                   Instead of asking users to create a listing from scratch, the flow shifts
-                  to something they&apos;ve already done — buying the item.
+                  to something they&apos;ve already done, buying the item.
                 </p>
                 <p>
                   Users start from their wardrobe, preview the product, and move into listing
                   with key details already filled in.
                 </p>
-                <CsQuote>Listing becomes a continuation of ownership — not a task from zero.</CsQuote>
+                <CsQuote>Listing becomes a continuation of ownership, not a task from zero.</CsQuote>
               </>
             }
             visual={
@@ -139,7 +139,7 @@ export const CASES: Record<string, Case> = {
             text={
               <>
                 <p>
-                  I designed &ldquo;My Wardrobe&rdquo; — a flow that surfaces items from a user&apos;s
+                  I designed &ldquo;My Wardrobe&rdquo;, a flow that surfaces items from a user&apos;s
                   order history and allows them to list directly from there.
                 </p>
                 <p>
@@ -152,7 +152,7 @@ export const CASES: Record<string, Case> = {
                   <li>Reduces effort at the exact moment of intent</li>
                 </ul>
                 <CsQuote>
-                  The experience shifts from input to selection — making selling feel as easy as buying.
+                  The experience shifts from input to selection, making selling feel as easy as buying.
                 </CsQuote>
               </>
             }
@@ -181,7 +181,7 @@ export const CASES: Record<string, Case> = {
             { n: "↓",   d: "Listing friction"  },
           ]} />
           <p className="cs-caption">
-            Removing effort — not adding features — made the experience feel easier and more achievable.
+            Removing effort, not adding features, made the experience feel easier and more achievable.
           </p>
         </CsSection>
       </>
@@ -208,7 +208,7 @@ export const CASES: Record<string, Case> = {
           <h4>Context</h4>
           <p>
             I led experimentation across the product detail page, focusing on improving
-            conversion at high-intent moments. This is where users decide to buy —
+            conversion at high-intent moments. This is where users decide to buy,
             small interruptions have a disproportionate impact.
           </p>
         </CsSection>
@@ -274,7 +274,7 @@ export const CASES: Record<string, Case> = {
         <CsSection>
           <h4>Test 02 · Cart (Applying the learning)</h4>
           <p>
-            Based on the wishlist results, I applied the same principle to add-to-bag —
+            Based on the wishlist results, I applied the same principle to add-to-bag,
             keeping users in context instead of redirecting them.
           </p>
           <CsTwoCol
@@ -316,7 +316,7 @@ export const CASES: Record<string, Case> = {
         <CsSection>
           <h4>What This Shows</h4>
           <p>
-            Both tests validated the same principle — preserving context at high-intent
+            Both tests validated the same principle, preserving context at high-intent
             moments improves outcomes across different parts of the journey.
           </p>
           <CsQuote>The first test proved the concept. The second proved it wasn&apos;t isolated.</CsQuote>
@@ -357,7 +357,7 @@ export const CASES: Record<string, Case> = {
           <h4>Context</h4>
           <p>
             Product Lab Hub is a self-initiated product exploring how designers learn product thinking.
-            I wanted to move beyond passive learning and create something interactive — where users learn by making decisions.
+            I wanted to move beyond passive learning and create something interactive, where users learn by making decisions.
           </p>
           <p>
             I owned the full lifecycle, from concept and interaction design through to build and launch.
@@ -368,14 +368,14 @@ export const CASES: Record<string, Case> = {
           <h4>The Problem</h4>
           <p>
             Most design and product learning is passive. You read frameworks,
-            consume content, and follow structured guidance — but rarely practise
+            consume content, and follow structured guidance, but rarely practise
             making decisions in context.
           </p>
           <div className="cs-image" style={{ marginTop: "16px" }}>
             <img src="https://i.postimg.cc/L8qZdjgn/issue.png" alt="Passive learning problem" />
           </div>
           <p className="cs-caption">
-            Learning is structured and informative — but lacks decision-making and feedback.
+            Learning is structured and informative, but lacks decision-making and feedback.
           </p>
           <CsQuote>There is no feedback loop. You consume, but you don&apos;t apply.</CsQuote>
         </CsSection>
@@ -390,7 +390,7 @@ export const CASES: Record<string, Case> = {
                   product decisions and seeing the outcome.
                 </p>
                 <p>
-                  Each mission presents context, constraints, and trade-offs — mirroring
+                  Each mission presents context, constraints, and trade-offs, mirroring
                   how decisions are made in real product environments.
                 </p>
                 <CsQuote>Learning happens through consequence, not instruction.</CsQuote>
@@ -439,16 +439,16 @@ export const CASES: Record<string, Case> = {
           <CsTwoCol
             left={
               <ul>
-                <li><strong>Missions over modules</strong> — framed as scenarios, not lessons</li>
-                <li><strong>Progressive complexity</strong> — builds without overwhelming</li>
-                <li><strong>Guided, not prescriptive</strong> — supports thinking, not answers</li>
+                <li><strong>Missions over modules</strong>, framed as scenarios, not lessons</li>
+                <li><strong>Progressive complexity</strong>, builds without overwhelming</li>
+                <li><strong>Guided, not prescriptive</strong>, supports thinking, not answers</li>
               </ul>
             }
             right={
               <ul>
-                <li><strong>Minimal interface</strong> — focus on decisions, not UI</li>
-                <li><strong>Immediate feedback</strong> — reinforces learning loop</li>
-                <li><strong>Short sessions</strong> — designed for repeat engagement</li>
+                <li><strong>Minimal interface</strong>, focus on decisions, not UI</li>
+                <li><strong>Immediate feedback</strong>, reinforces learning loop</li>
+                <li><strong>Short sessions</strong>, designed for repeat engagement</li>
               </ul>
             }
           />
@@ -537,7 +537,7 @@ export const CASES: Record<string, Case> = {
             The product is content-heavy, with hundreds of games competing for attention.
           </p>
           <p>
-            Rather than redesigning individual screens, I approached this as a system problem —
+            Rather than redesigning individual screens, I approached this as a system problem,
             how the product structures and presents choice.
           </p>
         </CsSection>
@@ -560,7 +560,7 @@ export const CASES: Record<string, Case> = {
                   <li>High cognitive load</li>
                   <li>Slow discovery</li>
                 </ul>
-                <CsQuote>The issue wasn&apos;t content — it was how it was structured.</CsQuote>
+                <CsQuote>The issue wasn&apos;t content, it was how it was structured.</CsQuote>
               </>
             }
             visual={
@@ -578,7 +578,7 @@ export const CASES: Record<string, Case> = {
             low-intent exploration and high-intent play.
           </p>
           <p>
-            The product treated these behaviours the same — forcing everything into
+            The product treated these behaviours the same, forcing everything into
             a single, undifferentiated experience.
           </p>
         </CsSection>
@@ -590,7 +590,7 @@ export const CASES: Record<string, Case> = {
             text={
               <>
                 <p>
-                  I restructured the experience around intent — separating browsing from
+                  I restructured the experience around intent, separating browsing from
                   high-value play and introducing clearer pathways through the product.
                 </p>
                 <ul>
@@ -716,7 +716,7 @@ export const CASES: Record<string, Case> = {
           <h4>Outcome</h4>
           <p>
             The redesign shifts the experience from passive scrolling to structured
-            exploration — supporting both browsing and high-intent play.
+            exploration, supporting both browsing and high-intent play.
           </p>
           <p>
             By designing for intent rather than volume, the product becomes easier
