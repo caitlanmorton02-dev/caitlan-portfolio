@@ -8,6 +8,7 @@ import "../styles/globals.css"
 // Sections
 import Hero from "../components/sections/Hero"
 import Work from "../components/sections/Work"
+import Testimonials from "../components/sections/Testimonials"
 import Approach from "../components/sections/Approach"
 import About from "../components/sections/About"
 import Contact from "../components/sections/Contact"
@@ -63,6 +64,10 @@ export default function Page() {
       <div className="divider" />
 
       <Work />
+
+      <div className="divider" />
+
+      <Testimonials />
 
       <div className="divider" />
 

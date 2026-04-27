@@ -335,6 +335,11 @@
 #cait-root .cs-caption { font-size: 12px; font-weight: 500; color: var(--text-muted); text-align: center; margin-top: 10px; font-family: var(--body); letter-spacing: 0.03em; line-height: 1.6; }
 #cait-root .cs-compare-item { display: flex; flex-direction: column; flex: 1; min-width: 0; }
 
+#cait-root .testimonials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px 72px; }
+#cait-root .t-item { padding-top: 20px; border-top: 1px solid var(--line-soft); }
+#cait-root .t-quote { font-family: var(--display); font-size: clamp(17px, 1.7vw, 22px); font-weight: 300; font-style: italic; color: var(--text); line-height: 1.55; margin-bottom: 16px; }
+#cait-root .t-author { font-family: var(--body); font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
+
 #cait-root .nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px 4px; background: none; border: none; margin-left: 8px; flex-shrink: 0; }
 #cait-root .nav-hamburger span { width: 22px; height: 1.5px; background: var(--text-mid); border-radius: 2px; transition: transform 0.3s var(--ease), opacity 0.2s; display: block; }
 #cait-root .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
@@ -402,6 +407,7 @@
   #cait-root .card-sm-visual { min-height: 180px; }
   #cait-root .card-sm-body { padding: 18px 18px 22px; }
   #cait-root .card-sm-body h3 { font-size: 19px; }
+  #cait-root .testimonials-grid { grid-template-columns: 1fr; gap: 36px; }
   #cait-root .approach-grid { grid-template-columns: 1fr; }
   #cait-root .approach-item { border-right: none !important; border-top: 1px solid var(--line-soft); padding: 28px 20px; }
   #cait-root .approach-item:first-child { border-top: none; }
