@@ -64,7 +64,7 @@
 #cait-root nav.scrolled { border-bottom-color: var(--line-soft); }
 #cait-root .nav-logo {
   font-family: var(--display);
-  font-size: 17px; font-weight: 400; letter-spacing: 0.02em;
+  font-size: 17px; font-weight: 600; letter-spacing: 0.02em;
   text-decoration: none; color: var(--text);
 }
 #cait-root .nav-links {
