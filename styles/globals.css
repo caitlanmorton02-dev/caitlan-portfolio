@@ -283,6 +283,10 @@
 #cait-root .overlay.open .cs-panel { transform: translateY(0); }
 
 @media (max-width: 600px) {
+  #cait-root .about-label {
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
   #cait-root .overlay { padding: 0; align-items: flex-end; }
   #cait-root .cs-panel { max-width: 100%; max-height: 92svh; border-radius: 16px 16px 0 0; border-bottom: none; transform: translateY(100%); }
   #cait-root .overlay.open .cs-panel { transform: translateY(0); }
