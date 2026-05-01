@@ -34,6 +34,1067 @@ export interface Case {
 
 export const CASES: Record<string, Case> = {
 
+
+hale: {
+  tag: "Case Study · Hale · Health UX · Design Task",
+  title: "Designing heart scan results people can understand",
+  hook: "Medical results often present raw data without context. I focused on translating complex heart scan data into clear, actionable insight.",
+  meta: [
+    { k: "Role", v: "Product Designer", big: false },
+    { k: "Type", v: "Design Task", big: false },
+    { k: "Focus", v: "Clarity & comprehension", big: true },
+    { k: "User", v: "Patients (40–55)", big: true },
+  ],
+
+  body: () => (
+    <>
+
+      {/* CONTEXT */}
+      <CsSection>
+        <h4>Context</h4>
+        <p>
+          People receiving heart scan results are often anxious and unsure how to interpret what they’re seeing.
+        </p>
+        <p>
+          The data is clinically accurate, but lacks clarity, context, and guidance.
+        </p>
+      </CsSection>
+
+      {/* CORE QUESTION */}
+      <CsSection>
+        <h4>Core Question</h4>
+        <p>
+          I focused the experience around a single user question:
+        </p>
+        <CsQuote>
+          “Am I okay?”
+        </CsQuote>
+        <p>
+          Everything in the design builds from answering this clearly and immediately.
+        </p>
+      </CsSection>
+
+      {/* PROBLEM */}
+      <CsSection>
+        <h4>The Problem</h4>
+        <p>
+          Raw scores don’t answer what users actually need to know.
+        </p>
+        <ul>
+          <li>Is this good or bad?</li>
+          <li>How does this compare to others?</li>
+          <li>What should I do next?</li>
+        </ul>
+        <CsQuote>
+          The score didn’t answer the question.
+        </CsQuote>
+      </CsSection>
+
+      {/* CONSTRAINTS */}
+      <CsSection>
+        <h4>Design Constraints</h4>
+        <ul>
+          <li>Medical data is unfamiliar to most users</li>
+          <li>Risk varies by age and context</li>
+          <li>Anxiety is high at point of entry</li>
+        </ul>
+        <p>
+          This meant clarity had to come before depth.
+        </p>
+      </CsSection>
+
+      {/* STEP 1 */}
+      <CsSection>
+        <h4>Step 1 · Immediate Clarity</h4>
+        <CsSplit
+          text={
+            <>
+              <p>
+                The first priority was answering “Am I okay?” instantly.
+              </p>
+              <ul>
+                <li>Clear risk statement</li>
+                <li>Age-based percentile context</li>
+                <li>Simple visual scale</li>
+              </ul>
+              <CsQuote>
+                Clarity first. Detail later.
+              </CsQuote>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="https://i.postimg.cc/zXdR6st3/hale-Top.jpg" alt="" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* STEP 2 */}
+      <CsSection>
+        <h4>Step 2 · Build Understanding</h4>
+        <CsSplit
+          reverse
+          text={
+            <>
+              <p>
+                Once users understand their risk, the next step is explaining why.
+              </p>
+              <ul>
+                <li>Grouped, scannable metrics</li>
+                <li>Plain language explanations</li>
+                <li>Supporting visual breakdowns</li>
+              </ul>
+              <p>
+                Complex clinical data becomes understandable and contextual.
+              </p>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="https://i.postimg.cc/rFht3BnK/hale-Middle.jpg" alt="" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* STEP 3 */}
+      <CsSection>
+        <h4>Step 3 · Support Action</h4>
+        <CsSplit
+          text={
+            <>
+              <p>
+                The final step focuses on what users should do next.
+              </p>
+              <ul>
+                <li>Simple, actionable guidance</li>
+                <li>Small, achievable behaviours</li>
+                <li>Expert-backed reassurance</li>
+              </ul>
+              <p>
+                The goal is to move from understanding to action without increasing anxiety.
+              </p>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="https://i.postimg.cc/sDnZqk6j/hale-Bottom.jpg" alt="" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* FLOW */}
+      <CsSection>
+        <h4>Experience Flow</h4>
+        <p>
+          The journey follows a simple progression:
+        </p>
+        <ul>
+          <li>Am I okay?</li>
+          <li>What does this mean?</li>
+          <li>What should I do next?</li>
+        </ul>
+      </CsSection>
+
+      {/* MEASUREMENT */}
+      <CsSection>
+        <h4>Measuring Success</h4>
+        <CsSplit
+          reverse
+          text={
+            <>
+              <p>
+                Success is measured by whether users understand and act.
+              </p>
+              <ul>
+                <li>Primary: action plan starts</li>
+                <li>Secondary: engagement with results</li>
+                <li>Guardrail: anxiety and drop-off</li>
+              </ul>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="https://i.postimg.cc/wT3By7Vw/hale-exp.png" alt="" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* OUTCOME */}
+      <CsSection>
+        <h4>Outcome</h4>
+        <p>
+          The design shifts results from raw data to clear understanding,
+          helping users feel informed, reassured, and able to take action.
+        </p>
+        <CsQuote>
+          Understanding leads to better decisions and better outcomes.
+        </CsQuote>
+      </CsSection>
+
+    </>
+  ),
+},
+
+
+
+// FUTURE //
+membership: {
+  tag: "Design Task · Content UX",
+  title: "Turning content into a conversion journey",
+  hook: "Membership is often introduced as an interruption. I explored how conversion can be structured within editorial flow, aligning prompts with user intent rather than disrupting it.",
+  meta: [
+    { k: "Type", v: "Design task", big: false },
+    { k: "Focus", v: "Conversion & UX", big: true },
+    { k: "Method", v: "Experimentation", big: true },
+    { k: "Context", v: "Editorial platform", big: false },
+  ],
+
+  body: () => (
+    <>
+      <CsSection>
+        <h4>Context</h4>
+        <p>Users arrive to read, not subscribe.</p>
+        <p>
+          Articles are long-form, scroll-heavy, and ad-dense, meaning any
+          conversion moment must compete for attention without breaking the
+          experience.
+        </p>
+      </CsSection>
+
+      <CsSection>
+        <h4>The Problem</h4>
+        <p>Conversion was treated as a single moment rather than a journey.</p>
+        <ul>
+          <li>Reliance on end-of-article prompts</li>
+          <li>Limited reinforcement of value</li>
+          <li>Weak connection between content and subscription</li>
+        </ul>
+        <CsQuote>
+          The ask came before the value was fully understood.
+        </CsQuote>
+      </CsSection>
+
+      <CsSection>
+        <h4>Approach</h4>
+        <p>
+          I restructured membership into a progression across the article.
+        </p>
+        <ul>
+          <li>Entry: introduce value early</li>
+          <li>Mid: reinforce through context</li>
+          <li>Final: convert at a natural stopping point</li>
+        </ul>
+        <CsQuote>
+          Entry introduces value, mid reinforces it, and final converts once it’s earned.
+        </CsQuote>
+      </CsSection>
+
+      <CsSection>
+        <h4>Entry · Earning Attention</h4>
+        <CsSplit
+          text={
+            <>
+              <p>
+                Membership is introduced early to capture attention without
+                interrupting reading.
+              </p>
+              <ul>
+                <li>Low visual weight</li>
+                <li>Integrated within content</li>
+                <li>Aligned with scroll behaviour</li>
+              </ul>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="https://i.postimg.cc/NftWSVyb/kiplinger-entry.jpg" alt="" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      <CsSection>
+        <h4>Mid · Reinforcing Value</h4>
+        <CsSplit
+          reverse
+          text={
+            <>
+              <p>
+                As engagement increases, value becomes clearer and more explicit.
+              </p>
+              <ul>
+                <li>Stronger hierarchy</li>
+                <li>Clear articulation of benefits</li>
+                <li>Still within context</li>
+              </ul>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="https://i.postimg.cc/Yq7JZV4y/kiplinger-mid.jpg" alt="" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      <CsSection>
+        <h4>Final · Conversion</h4>
+        <CsSplit
+          text={
+            <>
+              <p>
+                Conversion is introduced once value is established.
+              </p>
+              <ul>
+                <li>Focused CTA</li>
+                <li>No competing distractions</li>
+                <li>Builds on prior context</li>
+              </ul>
+              <p>
+                The ask follows the experience rather than interrupting it.
+              </p>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="https://i.postimg.cc/KvbdwVKH/kiplinger-final.jpg" alt="" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      <CsSection>
+        <h4>Experimentation</h4>
+        <CsSplit
+          reverse
+          text={
+            <>
+              <p>
+                The approach tests whether reinforcing value mid-article increases downstream conversion.
+              </p>
+              <ul>
+                <li>Baseline: entry + final</li>
+                <li>Variant: entry + mid + final</li>
+                <li>Focus: conversion behaviour</li>
+              </ul>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="https://i.postimg.cc/ZRhc0kzF/membership-exp.png" alt="" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      <CsSection>
+        <h4>Outcome</h4>
+        <p>
+          Structuring conversion across the journey aligns with how users read,
+          improving engagement without disrupting the experience.
+        </p>
+        <CsQuote>
+          Conversion should follow value, not interrupt it.
+        </CsQuote>
+      </CsSection>
+    </>
+  ),
+},
+
+campaign: {
+  tag: "Creative Task · Campaign",
+  title: "Turning financial complexity into narrative",
+  hook: "Financial topics are often difficult to relate to. I explored two creative directions using narrative structure to make complex ideas more engaging, accessible, and easier to understand.",
+  meta: [
+    { k: "Type",   v: "Creative task",       big: false },
+    { k: "Focus",  v: "Narrative & content", big: true  },
+    { k: "Output", v: "Campaign direction",  big: false },
+  ],
+
+  body: () => (
+    <>
+
+      {/* CONTEXT */}
+      <CsSection>
+        <h4>Context</h4>
+        <p>
+          Large financial topics are often communicated through scale and data,
+          making them difficult to relate to and easy to disengage from.
+        </p>
+      </CsSection>
+
+      {/* PROBLEM */}
+      <CsSection>
+        <h4>The Problem</h4>
+        <ul>
+          <li>Concepts feel distant and abstract</li>
+          <li>Scale lacks personal relevance</li>
+          <li>Users disengage before understanding</li>
+        </ul>
+        <CsQuote>
+          The challenge wasn’t complexity, it was how it was communicated.
+        </CsQuote>
+      </CsSection>
+
+      {/* APPROACH */}
+      <CsSection>
+        <h4>Approach</h4>
+        <p>
+          I explored two creative directions, both structured around narrative,
+          but differing in how they guide attention and engagement.
+        </p>
+      </CsSection>
+
+      {/* FLOW 01 */}
+      <CsSection>
+        <h4>Flow 01 · Motion-led Narrative</h4>
+
+        <p>
+          The first direction uses motion and pacing to guide the user through the story.
+        </p>
+
+        <CsFlow
+          items={[
+            {
+              src: "https://i.postimg.cc/mgn4vjWC/01-Hook-Content.jpg",
+              label: "01 · Hook — Bold, immediate stat",
+            },
+            {
+              src: "https://i.postimg.cc/FKJvNShx/02-Tension-Content.jpg",
+              label: "02 · Tension — Reframe beyond money",
+            },
+            {
+              src: "https://i.postimg.cc/Bv134FJc/03-Personal-Content.jpg",
+              label: "03 · Question — Bring it closer to the individual",
+            },
+            {
+              src: "https://i.postimg.cc/Bv134FJ5/04-Value-Content.jpg",
+              label: "04 · Solution — Make sense of the issue",
+            },
+            {
+              src: "https://i.postimg.cc/9fq2C9cY/05-CTA-Content.jpg",
+              label: "05 · Action — Drive engagement",
+            },
+          ]}
+        />
+
+        <p className="cs-caption">
+          Motion was used to guide pacing, reveal information progressively, and reinforce narrative flow.
+        </p>
+      </CsSection>
+
+      {/* FLOW 02 */}
+      <CsSection>
+        <h4>Flow 02 · Structured Narrative</h4>
+
+        <p>
+          The second direction focuses on clarity through structure and editorial sequencing.
+        </p>
+
+        <CsFlow
+          items={[
+            {
+              src: "https://i.postimg.cc/5N7Wzg0L/01-Scale-Background.png",
+              label: "01 · Scale — Establish magnitude",
+            },
+            {
+              src: "https://i.postimg.cc/rFn24jmJ/02-Opportunity-Background.png",
+              label: "02 · Opportunity — Reframe the topic",
+            },
+            {
+              src: "https://i.postimg.cc/Gh7nDK2q/03-Question-Background.png",
+              label: "03 · Question — Start the conversation",
+            },
+            {
+              src: "https://i.postimg.cc/8PKgv45w/04-Guidance-Background.png",
+              label: "04 · Guidance — Provide clarity",
+            },
+            {
+              src: "https://i.postimg.cc/MKPJB5T9/05-CTA-Background.png",
+              label: "05 · Action — Encourage next step",
+            },
+          ]}
+        />
+
+        <p className="cs-caption">
+          This approach prioritises clarity and structure, guiding users through a defined narrative path.
+        </p>
+      </CsSection>
+
+      {/* STRUCTURE */}
+      <CsSection>
+        <h4>Narrative Structure</h4>
+        <ul>
+          <li><strong>Hook</strong> — Capture attention</li>
+          <li><strong>Tension</strong> — Reframe the problem</li>
+          <li><strong>Question</strong> — Create relevance</li>
+          <li><strong>Guidance</strong> — Provide clarity</li>
+          <li><strong>Action</strong> — Prompt engagement</li>
+        </ul>
+        <p>
+          Both directions follow the same structure, applied through different interaction styles.
+        </p>
+      </CsSection>
+
+      {/* OUTCOME */}
+      <CsSection>
+        <h4>Outcome</h4>
+        <p>
+          Exploring multiple directions revealed how narrative can be adapted
+          to different interaction styles while maintaining clarity.
+        </p>
+        <CsQuote>
+          The goal wasn’t to explain finance, but to make people care about it.
+        </CsQuote>
+      </CsSection>
+
+    </>
+  ),
+},
+
+//AURALIS//
+auralis: {
+  tag: "System Design · Auralis · Foundations",
+  title: "Designing a system for intentional shopping",
+  hook: "Auralis explores how a restrained design system can support clarity, focus, and considered product discovery.",
+  meta: [
+    { k: "Type",   v: "Design System",         big: false },
+    { k: "Focus",  v: "Foundations & Layout",  big: true  },
+    { k: "Domain", v: "Fashion / Editorial",   big: false },
+    { k: "Goal",   v: "Clarity through restraint", big: true },
+  ],
+
+  body: () => (
+    <>
+
+      {/* CONTEXT */}
+      <CsSection>
+        <h4>Context</h4>
+        <p>
+          Auralis is a conceptual fashion platform designed for users who shop with intention, not volume.
+        </p>
+        <p>
+          The system focuses on clarity, restraint, and editorial presentation over visual noise.
+        </p>
+      </CsSection>
+
+      {/* PRINCIPLE */}
+      <CsSection>
+        <h4>Design Principle</h4>
+        <CsQuote>
+          Clarity comes from restraint, not decoration.
+        </CsQuote>
+        <p>
+          Every decision in the system reduces noise and reinforces structure.
+        </p>
+      </CsSection>
+
+      {/* FOUNDATIONS */}
+      <CsSection>
+        <h4>Foundations</h4>
+
+        <CsSplit
+          text={
+            <>
+              <p>
+                The system is built on a small set of primitives that scale consistently across the product.
+              </p>
+              <ul>
+                <li>Typography defines hierarchy</li>
+                <li>Colour creates structure, not style</li>
+                <li>Spacing drives rhythm and layout</li>
+              </ul>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="ADD_FOUNDATIONS_IMAGE" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* TYPOGRAPHY */}
+      <CsSection>
+        <h4>Typography System</h4>
+
+        <CsSplit
+          reverse
+          text={
+            <>
+              <p>
+                Two type families define the system: editorial contrast and functional clarity.
+              </p>
+              <ul>
+                <li>Cormorant for editorial hierarchy</li>
+                <li>Inter for UI and readability</li>
+                <li>Tokenised scale for consistency</li>
+              </ul>
+              <p>
+                This creates tension between expression and usability.
+              </p>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="ADD_TYPE_IMAGE" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* COLOUR */}
+      <CsSection>
+        <h4>Colour System</h4>
+
+        <CsSplit
+          text={
+            <>
+              <p>
+                Colour is used sparingly to maintain focus on product and content.
+              </p>
+              <ul>
+                <li>Neutral, material-inspired palette</li>
+                <li>Contrast through tone, not saturation</li>
+                <li>Clear semantic roles</li>
+              </ul>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="ADD_COLOUR_IMAGE" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* LAYOUT */}
+      <CsSection>
+        <h4>Layout System</h4>
+
+        <CsSplit
+          reverse
+          text={
+            <>
+              <p>
+                Layout is driven by a structured grid and consistent spacing tokens.
+              </p>
+              <ul>
+                <li>12-column desktop grid</li>
+                <li>Responsive collapse to 4 columns</li>
+                <li>Reusable layout patterns</li>
+              </ul>
+              <p>
+                This ensures consistency across editorial and product surfaces.
+              </p>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="ADD_LAYOUT_IMAGE" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* MOTION */}
+      <CsSection>
+        <h4>Motion</h4>
+
+        <CsSplit
+          text={
+            <>
+              <p>
+                Motion is subtle, purposeful, and largely invisible.
+              </p>
+              <ul>
+                <li>Tokenised durations</li>
+                <li>Consistent easing curves</li>
+                <li>Supports interaction, never distracts</li>
+              </ul>
+              <p>
+                Movement reinforces clarity rather than adding emphasis.
+              </p>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="ADD_MOTION_IMAGE" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* OUTCOME */}
+      <CsSection>
+        <h4>Outcome</h4>
+        <p>
+          Auralis defines a system where every element is intentional,
+          supporting a calmer, more focused shopping experience.
+        </p>
+        <CsQuote>
+          The system removes noise so the product can speak.
+        </CsQuote>
+      </CsSection>
+
+    </>
+  ),
+},
+
+
+//IRULUNE //
+irelune: {
+  tag: "Product Concept · Emotional UX",
+  title: "Designing the simplest version of an emotional product",
+  hook: "Irelune explores how storytelling can help parents respond to difficult moments with children, without overwhelming either user.",
+  meta: [
+    { k: "Type",   v: "0→1 Concept",          big: false },
+    { k: "Focus",  v: "Emotional UX",         big: true  },
+    { k: "Goal",   v: "Clarity & trust",      big: true  },
+    { k: "Stage",  v: "MVP definition",       big: false },
+  ],
+
+  body: () => (
+    <>
+
+      {/* CONTEXT */}
+      <CsSection>
+        <h4>Context</h4>
+        <p>
+          Parents often face emotional moments where they don’t know what to say or how to respond.
+        </p>
+        <p>
+          Existing approaches rely on advice or instruction, which can feel overwhelming in the moment.
+        </p>
+      </CsSection>
+
+      {/* PROBLEM */}
+      <CsSection>
+        <h4>The Problem</h4>
+        <p>
+          These moments are:
+        </p>
+        <ul>
+          <li>Emotionally charged</li>
+          <li>Time-sensitive</li>
+          <li>Difficult to explain to a child directly</li>
+        </ul>
+        <CsQuote>
+          Parents don’t need more information. They need something they can use instantly.
+        </CsQuote>
+      </CsSection>
+
+      {/* STARTING POINT */}
+      <CsSection>
+        <h4>Choosing a Starting Point</h4>
+
+        <CsSplit
+          text={
+            <>
+              <p>
+                Early thinking explored multiple directions, but the product needed a clear focus.
+              </p>
+              <p>
+                I prioritised a single outcome:
+              </p>
+              <CsQuote>
+                Turning real moments into simple, safe stories.
+              </CsQuote>
+              <p>
+                This allowed the first version to stay focused and test the core interaction.
+              </p>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="https://i.postimg.cc/MG7NKmjK/Irelune-starting.jpg" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* WHY STORY */}
+      <CsSection>
+        <h4>Why Storytelling</h4>
+        <p>
+          Storytelling creates distance from the situation while still reflecting the emotion.
+        </p>
+        <ul>
+          <li>Children understand through characters</li>
+          <li>Parents avoid direct confrontation</li>
+          <li>Moments feel safer and more manageable</li>
+        </ul>
+      </CsSection>
+
+      {/* MVP */}
+      <CsSection>
+        <h4>Defining the MVP</h4>
+
+        <CsSplit
+          reverse
+          text={
+            <>
+              <p>
+                The MVP was intentionally lightweight, focused on a single interaction loop.
+              </p>
+              <p>
+                Instead of building systems early, the goal was to validate emotional value first.
+              </p>
+              <CsQuote>
+                If the moment works, everything else can follow.
+              </CsQuote>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="https://i.postimg.cc/d02ptjZX/Irelune-MVP.jpg" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* FEATURES */}
+      <CsSection>
+        <h4>Core Features</h4>
+
+        <CsSplit
+          text={
+            <>
+              <p>
+                The first version focuses only on what’s needed to create the moment:
+              </p>
+              <ul>
+                <li>Parent input describing a real situation</li>
+                <li>Character and tone selection</li>
+                <li>Generated short story</li>
+                <li>Simple narrated playback</li>
+                <li>Saved stories for repeat use</li>
+              </ul>
+              <p>
+                Each feature supports the transition from real emotion → safe narrative.
+              </p>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="https://i.postimg.cc/1zG25rNR/Irelune-Story.jpg" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* CONSTRAINTS */}
+      <CsSection>
+        <h4>Design Constraints</h4>
+        <CsTwoCol
+          left={
+            <ul>
+              <li>Parents need clarity and speed</li>
+              <li>Children need simplicity and familiarity</li>
+            </ul>
+          }
+          right={
+            <ul>
+              <li>Moments require calm, not complexity</li>
+              <li>Trust must be built immediately</li>
+            </ul>
+          }
+        />
+      </CsSection>
+
+      {/* TRADE OFFS */}
+      <CsSection>
+        <h4>Intentional Trade-offs</h4>
+        <ul>
+          <li>No subscriptions in first version</li>
+          <li>No progression systems</li>
+          <li>No gamification</li>
+        </ul>
+        <p>
+          Complexity was removed to prioritise emotional clarity and trust.
+        </p>
+      </CsSection>
+
+      {/* OUTCOME */}
+      <CsSection>
+        <h4>Outcome</h4>
+        <p>
+          By narrowing the product to its core interaction, Irelune creates a calm,
+          supportive starting point for emotionally difficult moments.
+        </p>
+        <CsQuote>
+          Clarity builds trust. Trust enables everything else.
+        </CsQuote>
+      </CsSection>
+
+    </>
+  ),
+},
+
+
+//ADMIN//
+
+admin: {
+  tag: "Internal Tools · PLT Marketplace Admin",
+  title: "Designing systems for moderation and operational scale",
+  hook: "Marketplace growth introduced new operational challenges around reporting and moderation. I designed internal tooling to improve visibility, reduce manual effort, and support faster decision-making.",
+  meta: [
+    { k: "Role",   v: "Product Designer · Project Lead", big: false },
+    { k: "Team",   v: "Engineers · Product · CS",        big: false },
+    { k: "Focus",  v: "Internal tools & systems",        big: true  },
+    { k: "Impact", v: "Trust & safety",                  big: true  },
+  ],
+
+  body: () => (
+    <>
+
+      {/* CONTEXT */}
+      <CsSection>
+        <h4>Context</h4>
+        <p>
+          As Marketplace scaled, internal teams needed better tools to manage user behaviour and moderation.
+        </p>
+        <p>
+          Existing workflows were fragmented, manual, and lacked visibility into key user activity.
+        </p>
+      </CsSection>
+
+      {/* PROBLEM */}
+      <CsSection>
+        <h4>The Problem</h4>
+
+        <CsSplit
+          text={
+            <>
+              <p>
+                Internal teams couldn’t efficiently investigate or act on reported users.
+              </p>
+              <ul>
+                <li>No direct way to search boutique accounts</li>
+                <li>Limited visibility into report history</li>
+                <li>Manual, slow investigation workflows</li>
+                <li>Delayed moderation decisions</li>
+              </ul>
+              <CsQuote>
+                We couldn’t act on issues we couldn’t see.
+              </CsQuote>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="ADD_ADMIN_BEFORE" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* APPROACH */}
+      <CsSection>
+        <h4>Approach</h4>
+        <p>
+          I treated this as a system design problem, focusing on enabling internal teams
+          to search, understand, and act quickly.
+        </p>
+        <ul>
+          <li>Surface all relevant user data in one place</li>
+          <li>Provide clear moderation context</li>
+          <li>Enable fast, confident actions</li>
+        </ul>
+      </CsSection>
+
+      {/* SYSTEM */}
+      <CsSection>
+        <h4>System Design</h4>
+
+        <CsSplit
+          text={
+            <>
+              <p>
+                The solution introduced a structured moderation system across three core areas:
+              </p>
+              <ul>
+                <li>Search: locate boutique accounts beyond listings</li>
+                <li>Review: view reports, history, and context</li>
+                <li>Action: block accounts or resolve reports</li>
+              </ul>
+              <p>
+                This created a clear workflow from issue → investigation → resolution.
+              </p>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="ADD_ADMIN_SYSTEM" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* DESIGN */}
+      <CsSection>
+        <h4>Designing for Internal Users</h4>
+
+        <CsSplit
+          reverse
+          text={
+            <>
+              <p>
+                The interface prioritised clarity and speed over visual complexity.
+              </p>
+              <ul>
+                <li>Dense but scannable data views</li>
+                <li>Clear status and report indicators</li>
+                <li>Fast access to key actions</li>
+              </ul>
+              <p>
+                The goal was reducing cognitive load during investigation.
+              </p>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="ADD_ADMIN_UI" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* OUTCOME */}
+      <CsSection>
+        <h4>Outcome</h4>
+        <p>
+          The new tooling improved how internal teams investigate and moderate marketplace users.
+        </p>
+        <ul>
+          <li>Faster user search and investigation</li>
+          <li>Improved visibility into reports and behaviour</li>
+          <li>Reduced manual effort for CS and Marketing teams</li>
+        </ul>
+        <CsQuote>
+          Better systems enable faster, safer decisions at scale.
+        </CsQuote>
+      </CsSection>
+
+      {/* REFLECTION */}
+      <CsSection>
+        <h4>Reflection</h4>
+        <p>
+          This project reinforced the importance of designing for internal users,
+          where clarity, speed, and reliability matter more than surface-level UI.
+        </p>
+        <p>
+          Small improvements in tooling can have a significant impact on operational efficiency and risk.
+        </p>
+      </CsSection>
+
+    </>
+  ),
+},
+
   // ---------------------------------------------------------------------------
   // MARKETPLACE
   // ---------------------------------------------------------------------------
@@ -735,4 +1796,251 @@ export const CASES: Record<string, Case> = {
       </>
     ),
   },
+
+duelo: {
+  tag: "Case Study · Duelo · Product Build · 2026",
+  title: "Duelo: decisions over opinions",
+  hook: "Design decisions are often made on opinion, not evidence. Duelo explores a faster, structured way to validate ideas through direct comparison.",
+  meta: [
+    { k: "Role",   v: "Founder · Product Designer", big: false },
+    { k: "Type",   v: "0→1 Product Build",          big: false },
+    { k: "Focus",  v: "Decision-making UX",         big: true  },
+    { k: "Stage",  v: "Early validation",           big: true  },
+  ],
+
+  body: () => (
+    <>
+
+      {/* CONTEXT */}
+      <CsSection>
+        <h4>Context</h4>
+        <p>
+          Designers make hundreds of small decisions, often without real validation.
+        </p>
+        <p>
+          Existing tools either rely on opinion or require traffic, leaving most teams
+          without a clear way to test ideas early.
+        </p>
+      </CsSection>
+
+      {/* PROBLEM */}
+      <CsSection>
+        <h4>The Problem</h4>
+        <CsSplit
+          text={
+            <>
+              <p>
+                Feedback today is easy to collect, but hard to use.
+              </p>
+              <ul>
+                <li>Opinions pile up without structure</li>
+                <li>Ideas are hard to compare directly</li>
+                <li>A/B testing is inaccessible early</li>
+                <li>Decisions rely on gut or hierarchy</li>
+              </ul>
+              <CsQuote>
+                The issue wasn’t feedback. It was turning it into decisions.
+              </CsQuote>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="https://i.postimg.cc/Mp7Z8F1F/control.jpg" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* CORE IDEA */}
+      <CsSection>
+        <h4>Core Idea</h4>
+        <p>
+          Duelo reframes feedback as a decision between two options.
+        </p>
+        <p>
+          Instead of asking for open input, users compare A vs B, creating
+          immediate, structured signal.
+        </p>
+        <CsQuote>
+          Post A vs B. Let people decide. Ship the winner.
+        </CsQuote>
+      </CsSection>
+
+      {/* CORE FLOW */}
+      <CsSection>
+        <h4>Product Loop</h4>
+
+        <CsSplit
+          text={
+            <>
+              <p>
+                The entire experience is built around a fast decision loop:
+              </p>
+              <ul>
+                <li>Post a duel in seconds</li>
+                <li>Collect community votes</li>
+                <li>See live results and breakdowns</li>
+                <li>Iterate and refine</li>
+              </ul>
+              <p>
+                This creates a continuous cycle of validation, not one-off feedback.
+              </p>
+            </>
+          }
+          visual={
+            <div className="cs-image flow">
+              <img src="https://i.postimg.cc/zffnbKD5/flow-steps.png" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* CREATE DUEL */}
+      <CsSection>
+        <h4>Create · Structured Input</h4>
+
+        <CsSplit
+          text={
+            <>
+              <p>
+                Creating a duel is designed to be fast and lightweight.
+              </p>
+              <ul>
+                <li>Upload two variants</li>
+                <li>Add optional context</li>
+                <li>Publish instantly</li>
+              </ul>
+              <p>
+                No setup, no traffic requirements, just immediate testing.
+              </p>
+              <CsQuote>
+                If it takes more than a minute, it’s too slow.
+              </CsQuote>
+            </>
+          }
+          visual={
+            <div className="cs-image createduel">
+              <img src="https://i.postimg.cc/fT4j2VC0/create-duel-2.jpg" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* FEED */}
+      <CsSection>
+        <h4>Feed · Decision Surface</h4>
+
+        <CsSplit
+          reverse
+          text={
+            <>
+              <p>
+                The feed is optimised for fast, repeat decisions.
+              </p>
+              <ul>
+                <li>Full-bleed, scroll-first layout</li>
+                <li>Clear A vs B split</li>
+                <li>Single tap voting</li>
+              </ul>
+              <p>
+                Participation becomes lightweight and continuous.
+              </p>
+            </>
+          }
+          visual={
+            <div className="cs-image">
+              <img src="https://i.postimg.cc/hvswrVm9/Duelo-feed-NEW.jpg" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* RESULTS */}
+      <CsSection>
+        <h4>Results · From Opinion to Signal</h4>
+
+        <CsSplit
+          text={
+            <>
+              <p>
+                Every duel generates structured insight, not just votes.
+              </p>
+              <ul>
+                <li>Vote distribution</li>
+                <li>Top comments</li>
+                <li>Segment breakdowns</li>
+              </ul>
+              <p>
+                This bridges the gap between qualitative feedback and usable data.
+              </p>
+            </>
+          }
+          visual={
+            <div className="cs-image breakdown">
+              <img src="https://i.postimg.cc/hvZsvsxy/Duelo-breakdown.png" />
+            </div>
+          }
+        />
+      </CsSection>
+
+      {/* PRINCIPLES */}
+      <CsSection>
+        <h4>Design Principles</h4>
+
+        <CsTwoCol
+          left={
+            <>
+              <ul>
+                <li>Fast decisions, not slow setup</li>
+                <li>Visual-first, minimal UI</li>
+                <li>No friction to participate</li>
+              </ul>
+            </>
+          }
+          right={
+            <>
+              <ul>
+                <li>Comparison over open input</li>
+                <li>Signal over noise</li>
+                <li>Community drives value</li>
+              </ul>
+            </>
+          }
+        />
+      </CsSection>
+
+      {/* USERS (LIGHT TOUCH) */}
+      <CsSection>
+        <h4>Who it’s for</h4>
+        <p>
+          Duelo is built for designers, founders, and product teams who need
+          fast validation without traffic or engineering dependency.
+        </p>
+      </CsSection>
+
+      {/* STATUS */}
+      <CsSection>
+        <h4>Status</h4>
+        <p>
+          Currently exploring early usage and validating whether structured
+          comparison leads to clearer product decisions.
+        </p>
+      </CsSection>
+
+      {/* OUTCOME */}
+      <CsSection>
+        <h4>Outcome</h4>
+        <p>
+          Duelo explores how interaction patterns can shift behaviour,
+          from collecting opinions to making decisions.
+        </p>
+        <CsQuote>
+          The value isn’t in feedback. It’s in clarity.
+        </CsQuote>
+      </CsSection>
+
+    </>
+  ),
+},
+
 }
